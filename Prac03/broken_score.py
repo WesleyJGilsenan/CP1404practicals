@@ -1,11 +1,17 @@
-def user_score():
-    score = int(input("Please enter a score: "))
-    return(score)
-
-
 def main():
-    final_Score = user_score()
-    print(final_Score)
+    score = float(input("Enter score: "))
+    print(status(score))
+
+
+def status(score):
+    if score < 0 or score > 100:
+        return "Invalid score"
+    elif score >= 90:
+        return "Excellent"
+    elif score >= 50:
+        return "Passable"
+    else:
+        return "Bad"
 
 
 main()

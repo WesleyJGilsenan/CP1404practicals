@@ -1,8 +1,3 @@
-"""
-CP1404/CP5632 - Practical
-Password checker "skeleton" code to help you get started
-"""
-
 MIN_LENGTH = 2
 MAX_LENGTH = 6
 SPECIAL_CHARS_REQUIRED = False
@@ -28,12 +23,11 @@ def main():
 
 
 def get_password():
-    global is_valid_password
+    global get_password
 
-    def is_valid_password(password):
+    def get_password(password):
         if len(password) < MIN_LENGTH or len(password) > MAX_LENGTH:
             return False
-
         count_lower = 0
         count_upper = 0
         count_digit = 0
